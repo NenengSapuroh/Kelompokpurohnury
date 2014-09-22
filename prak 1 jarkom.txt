@@ -1,0 +1,35 @@
+1. Untuk menghubungkan pc, menggunakan kabel COPPER CROSS-OVER
+
+2. Untuk menghubungkan PC ke switch, menggunakan kabel Copper Straight-Through. Sama juga dari Switch ke router
+
+3. menyambungkan pc pada switch....
+  PC1
+ - masukan ip address...misal: 192.168.1.24
+ - Subnet mask...............: 255.255.255.1
+ - defaulT gateway, .....misal : 192.168.1.22
+
+  PC2
+ - masukan ip address...misal: 192.168.1.26
+ - Subnet mask...............: 255.255.255.1
+ - defaulT gateway, .....misal : 192.168.1.22
+  -------pERHATIKANLAH IP ADDRESS, BELAKANG NOMER HARUS BEDA------
+
+  sWITCH 2950-24
+ - DI vlan DATABASE, ISI VlaN NUMBER dan VLAN NAme
+   Misal: Vlan Number: 55
+         vlan Name  : Lab1
+           --> Klik add
+ - Tambah 1 lagi
+   misal: vlan number: 66
+          vlan name: lab2
+
+  Di fast ethernet 0/1 (di bagian interface), di sebelah bacaan access, Vlan ganti
+  dengan vlan 55, di fast ethernet 0/2, ganti vlan dengan 66.
+
+4. Bila ingin menyambungkan Switch dengan Switch, di fast ethernet nomer 0/3, access ganti dengan Trunk, lalu switch sambungkan dengan switch lagi menggunakan kabelcopper cross-over
+
+
+
+
+
+
